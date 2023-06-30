@@ -22,7 +22,10 @@ export default createGlobalStyle`
 export const colors = {
     fontColor: "#3B232F",
     borderColor: "#003396",
-    bgColor: "#FFC2E1D9",
+    bgColor: "#FBF6F0",
     white: "ffffff",
-    black: "000000"
+    black: "000000",
+    boxColor: "rgba(151, 164, 162, 0.45)",
+    boxShadowColor: "rgba(0, 0, 0, 1)",
+    textColor: "#4B626C",
 }
