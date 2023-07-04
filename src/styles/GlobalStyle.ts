@@ -7,7 +7,6 @@ export default createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    font-size: 100%;
     }
 
     body {
@@ -23,6 +22,7 @@ export const colors = {
     fontColor: "#3B232F",
     borderColor: "#003396",
     bgColor: "#FBF6F0",
+    bgGreenColor: "#4B626C",
     white: "ffffff",
     black: "000000",
     boxColor: "rgba(151, 164, 162, 0.45)",
