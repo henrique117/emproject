@@ -62,21 +62,21 @@ export default function Perfil() {
                         <div style={{ display: "flex", height: "100vh" }}>
                             <div style={divGames}>
                                 <img src={osu} alt="osu" style={{height: "60%", width: "60%"}} />
-                                <p style={textAv}>100/100</p>
+                                <p style={textAv}>99/100</p>
                             </div>
                             <div style={divGames}>
                                 <img src={valorant} alt="gomes" style={{height: "60%", width: "60%"}} />
-                                <p style={textAv}>95/100</p>
+                                <p style={textAv}>2/100</p>
                             </div>
                         </div>
                         <div style={{ display: "flex", height: "100vh" }}>
                             <div style={divGames}>
                                 <img src={subnautica} alt="gomes" style={{height: "60%", width: "60%"}} />
-                                <p style={textAv}>75/100</p>
+                                <p style={textAv}>Adicionar Avaliação</p>
                             </div>
                             <div style={divGames}>
                                 <img src={astroneer} alt="gomes" style={{height: "60%", width: "60%"}} />
-                                <p style={textAv}>Adicionar Avaliação</p>
+                                <p style={textAv}>110/100</p>
                             </div>
                         </div>
                         <img src={carrinho} alt="botao carrinho" onClick={handleCarrinho} style={{

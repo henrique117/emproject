@@ -92,5 +92,6 @@ export const textAv: CSS.Properties = {
     fontWeight: "400",
     fontStyle: "normal",
     lineHeight: "normal",
-    color: colors.bgColor
+    color: colors.bgColor,
+    marginTop: "7px"
 }
