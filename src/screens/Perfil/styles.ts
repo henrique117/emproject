@@ -64,6 +64,8 @@ export const button: CSS.Properties = {
     border: "none",
     borderRadius: "10px",
     color: colors.bgColor,
+    alignItems: "center",
+    justifyContent: "space-between"
 }
 
 export const button2: CSS.Properties = {

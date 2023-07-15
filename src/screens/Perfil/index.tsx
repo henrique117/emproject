@@ -1,9 +1,15 @@
 import { HeaderComp } from "../../components/components"
 import manoel from "../../assets/manoel.png"
+import osu from "../../assets/osu.png"
 import carrinho from "../../assets/carrinho.png"
+import valorant from "../../assets/valorant.png"
+import subnautica from "../../assets/subnautica.png"
+import astroneer from "../../assets/astroneer.png"
 import { games, main, info, infos, h1, h2, button, button2, divGames, p, textAv } from "./styles"
 import { colors } from "../../styles/GlobalStyle"
 import { useNavigate } from "react-router-dom"
+import { HiPencil } from "react-icons/hi"
+import { BiSolidTrash } from "react-icons/bi"
 
 export default function Perfil() {
 
@@ -25,9 +31,17 @@ export default function Perfil() {
                             <h2 style={h2}>Seu CPF é 123.456.789-00</h2>
                             <button style={button}>
                                 <p style={p}>Aterar Dados</p>
+                                <HiPencil style={{
+                                    width: "35px",
+                                    height: "35px"
+                                }}/>
                             </button>
                             <button style={button}>
                                 <p style={p}>Excluir conta</p>
+                                <BiSolidTrash style={{
+                                    width: "35px",
+                                    height: "35px"
+                                }}/>
                             </button>
                             <button style={button2}>
                                 <p style={p}>Tela do admin</p>
@@ -47,21 +61,21 @@ export default function Perfil() {
                         </div>
                         <div style={{ display: "flex", height: "100vh" }}>
                             <div style={divGames}>
-                                <img src={manoel} alt="gomes" />
+                                <img src={osu} alt="osu" style={{height: "60%", width: "60%"}} />
                                 <p style={textAv}>100/100</p>
                             </div>
                             <div style={divGames}>
-                                <img src={manoel} alt="gomes" />
+                                <img src={valorant} alt="gomes" style={{height: "60%", width: "60%"}} />
                                 <p style={textAv}>95/100</p>
                             </div>
                         </div>
                         <div style={{ display: "flex", height: "100vh" }}>
                             <div style={divGames}>
-                                <img src={manoel} alt="gomes" />
+                                <img src={subnautica} alt="gomes" style={{height: "60%", width: "60%"}} />
                                 <p style={textAv}>75/100</p>
                             </div>
                             <div style={divGames}>
-                                <img src={manoel} alt="gomes" />
+                                <img src={astroneer} alt="gomes" style={{height: "60%", width: "60%"}} />
                                 <p style={textAv}>Adicionar Avaliação</p>
                             </div>
                         </div>

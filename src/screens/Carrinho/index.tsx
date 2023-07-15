@@ -1,8 +1,11 @@
 import { HeaderComp } from "../../components/components"
 import manoel from "../../assets/manoel.png"
+import subnautica from "../../assets/subnautica.png"
+import astroneer from "../../assets/astroneer.png"
 import pix from "../../assets/pix.png"
 import { compras, h1, h2, jogo, jogos, main, pay, preco, tittle, p, total, h1P, pagamento, eachPag, check, pP, button, bText } from "./styles"
 import { colors } from "../../styles/GlobalStyle"
+import { FaShoppingCart } from "react-icons/fa"
 
 export default function Carrinho() {
 
@@ -19,29 +22,29 @@ export default function Carrinho() {
                             <div style={jogo}>
                                 <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column" }}>
                                     <div>
-                                        <h2 style={h2}>Manoel</h2>
-                                        <p style={p}>Vc ta beeeemmm</p>
+                                        <h2 style={h2}>Astroneer</h2>
+                                        <p style={p}>Plataforma: PC</p>
                                     </div>
-                                    <h1 style={preco}>R$ 9999,99</h1>
+                                    <h1 style={preco}>R$ 35,59</h1>
                                 </div>
                                 <div style={{ height: "100%", display: "flex", justifyContent: "flex-end", marginLeft: "0.1rem" }}>
-                                    <img src={manoel} alt="caneta" />
+                                    <img src={astroneer} alt="espaco" style={{width: "200px", height: "265px"}} />
                                 </div>
                             </div>
                             <div style={jogo}>
                                 <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column" }}>
                                     <div>
-                                        <h2 style={h2}>Gomes</h2>
-                                        <p style={p}>Como ce taaaaa</p>
+                                        <h2 style={h2}>Subnautica</h2>
+                                        <p style={p}>Plataforma: PC</p>
                                     </div>
-                                    <h1 style={preco}>R$ 9999,99</h1>
+                                    <h1 style={preco}>R$ 57,99</h1>
                                 </div>
                                 <div style={{ height: "100%", display: "flex", justifyContent: "flex-end", marginLeft: "0.1rem" }}>
-                                    <img src={manoel} alt="azul" />
+                                    <img src={subnautica} alt="agua" style={{width: "200px", height: "265px"}} />
                                 </div>
                             </div>
                             <div style={total}>
-                                <h1 style={preco}>R$ 999999,99</h1>
+                                <h1 style={preco}>R$ 93,58</h1>
                                 <h1 style={preco}>Total</h1>
                             </div>
                         </div>
@@ -74,6 +77,10 @@ export default function Carrinho() {
                             <div>
                                 <button style={button}>
                                     <p style={bText}>Finalizar Compra</p>
+                                    <FaShoppingCart style={{
+                                        height: "35px",
+                                        width: "35px"
+                                    }}/>
                                 </button>
                             </div>
                         </div>

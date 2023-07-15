@@ -141,7 +141,9 @@ export const button: CSS.Properties = {
     color: colors.bgColor,
     padding: "13px",
     paddingInline: "30px",
-    marginTop: "2rem"
+    marginTop: "2rem",
+    alignItems: "center",
+    justifyContent: "space-between"
 }
 
 export const bText: CSS.Properties = {
