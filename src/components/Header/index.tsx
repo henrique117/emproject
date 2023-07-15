@@ -1,26 +1,34 @@
+import { useNavigate } from "react-router-dom"
 import imgHeader from "../../assets/imgHeader.png"
-import { divPesquisa, imagem, lista, main, pesquisa, texto } from "./styles"
+import { divPesquisa, imagem, li, lista, main, pesquisa, texto } from "./styles"
 
 export default function Header() {
+
+    const navigate = useNavigate()
+
+    function handlePerfil() {
+        navigate('/perfil')
+    }
+
     return (
         <>
             <div style={main}>
                 <img src={imgHeader} alt="Imagem do Header" style={imagem}/>
                 <ul style={lista}>
-                    <li>
+                    <li style={li}>
                         <h2 style={texto}>Lançamentos</h2>
                     </li>
-                    <li>
+                    <li style={li}>
                         <h2 style={texto}>Populares</h2>
                     </li>
-                    <li>
+                    <li style={li}>
                         <h2 style={texto}>Gêneros</h2>
                     </li>
-                    <li>
+                    <li style={li}>
                         <h2 style={texto}>Promoções</h2>
                     </li>
-                    <li>
-                        <h2 style={texto}>Conta</h2>
+                    <li style={{paddingInline: "1.5rem"}}>
+                        <h2 style={texto} onClick={handlePerfil}>Conta</h2>
                     </li>
                 </ul>
                 <div style={divPesquisa}>

@@ -8,6 +8,8 @@ export const main: CSS.Properties = {
     maxWidth: "100%",
     justifyContent: "space-between",
     alignItems: "center",
+    boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+    zIndex: "7"
 }
 
 export const imagem: CSS.Properties = {
@@ -21,7 +23,7 @@ export const lista: CSS.Properties = {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
 }
 
 export const pesquisa: CSS.Properties = {
@@ -45,9 +47,14 @@ export const texto: CSS.Properties = {
     fontSize: "32px",
     fontFamily: "Montserrat",
     fontStyle: "normal",
-    fontWeight: "lighter",
+    fontWeight: "300",
     lineHeight: "normal",
     height: "39px",
-    textAlign: "justify",
-    paddingInline: "20px",
+    textAlign: "center",
+}
+
+export const li: CSS.Properties = {
+    borderRightStyle: "solid", 
+    borderRightColor: colors.bgGreenColor,
+    paddingInline: "1.5rem",
 }
